@@ -37,8 +37,15 @@ function exampleFunction(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
+function makePersonObject(pid, pname, pemail) {
+  const obj ={
+    id: pid,
+    name: pname,
+    email: pemail,
+    
+    
+  }
+   return obj;
 }
 
 /**
@@ -54,8 +61,10 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(obj) {
+    return "Hello, my name is " + obj.name;
+  
+
 }
 
 /**
